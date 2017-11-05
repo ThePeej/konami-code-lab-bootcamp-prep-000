@@ -6,8 +6,8 @@ function init() {
   const body = document.querySelector('body')
   var cheats = []
   body.addEventListener('keydown', function(e) {
-    console.log(e.which)
-    cheats.push(parseInt(e.which))
+    console.log(e.detail || e.which)
+    cheats.push(parseInt(e.detail || e.which))
     console.log(cheats)
     }
   })
