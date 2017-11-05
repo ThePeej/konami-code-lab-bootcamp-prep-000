@@ -7,7 +7,7 @@ function init() {
   var cheats = []
   body.addEventListener('keydown', function(e) {
     console.log(e.which)
-    cheats.push(parseInt(e.which))
+    cheats.push(parseInt(e.detail || e.which))
     console.log(cheats)
   })
 }
