@@ -13,7 +13,6 @@ function init() {
     if (cheats === code) {
       console.log('Nailed it!')
       alert('1337 HAXXOR!!')
-    } 
     }
   })
 }
