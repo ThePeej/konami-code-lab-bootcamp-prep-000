@@ -10,12 +10,11 @@ function init() {
     cheats.push(parseInt(e.detail || e.which))
     debugger;  
     console.log(cheats)
-    })
-  debugger;  
-  if (cheats === code) {
-    console.log('Nailed it!')
-    alert('1337 HAXXOR!!')
-  } else {
-    cheats = []
-  }
+    if (cheats === code) {
+      console.log('Nailed it!')
+      alert('1337 HAXXOR!!')
+    } else {
+      cheats = []
+    }
+  })
 }
