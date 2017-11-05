@@ -8,12 +8,22 @@ function init() {
   body.addEventListener('keydown', function(e) {
     var key = parseInt(e.detail || e.which)
     console.log(key)
-    cheats.push(parseInt(e.detail || e.which))
-    console.log(cheats)
-    if (cheats === code) {
-      console.log('Nailed it!')
+
+    if (key === code[index]) {
+      index++
+      cheats.push(parseInt(e.detail || e.which))
+      console.log(cheats)
+      
+      if (index === code.length) {
+        console.log('Nailed it!')
+        debugger;
+        alert('1337 HAXXOR!!')
+        index = 0
+      }
+    } else {
       debugger;
-      alert('1337 HAXXOR!!')
-    }
+      index = 0
+      console.log('Nah bro.')
+    } 
   })
 }
