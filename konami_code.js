@@ -6,7 +6,8 @@ function init() {
   const index = 0
   var cheats = []
   body.addEventListener('keydown', function(e) {
-    console.log(e.detail || e.which)
+    var key = parseInt(e.detail || e.which)
+    console.log(key)
     cheats.push(parseInt(e.detail || e.which))
     console.log(cheats)
     if (cheats === code) {
