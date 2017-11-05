@@ -8,6 +8,7 @@ function init() {
   body.addEventListener('keydown', function(e) {
     console.log(e.detail || e.which)
     cheats.push(parseInt(e.detail || e.which))
+    debugger;  
     console.log(cheats)
     })
   debugger;  
