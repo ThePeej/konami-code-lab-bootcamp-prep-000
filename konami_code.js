@@ -8,13 +8,12 @@ function init() {
   body.addEventListener('keydown', function(e) {
     console.log(e.detail || e.which)
     cheats.push(parseInt(e.detail || e.which))
-    debugger;  
+    debugger;
     console.log(cheats)
     if (cheats === code) {
       console.log('Nailed it!')
       alert('1337 HAXXOR!!')
-    } else {
-      cheats = []
+    } 
     }
   })
 }
