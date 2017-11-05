@@ -16,13 +16,13 @@ function init() {
 
       if (index === code.length) {
         console.log('Nailed it!')
-        debugger;
+        ///debugger;
         alert('1337 HAXXOR!!')
         index = 0
         cheats = []
       }
     } else {
-      debugger;
+      ///debugger;
       index = 0
       cheats = []
       console.log('Nah bro.')
