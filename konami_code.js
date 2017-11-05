@@ -11,7 +11,8 @@ function init() {
     console.log(cheats)
     })
   if (cheats === code) {
-    alert("1337 HAXXOR!!")
+    console.log('Nailed it!')
+    alert('1337 HAXXOR!!')
   } else {
     cheats = []
   }
