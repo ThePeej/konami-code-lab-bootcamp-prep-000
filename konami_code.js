@@ -8,10 +8,10 @@ function init() {
   body.addEventListener('keydown', function(e) {
     console.log(e.detail || e.which)
     cheats.push(parseInt(e.detail || e.which))
-    debugger;
     console.log(cheats)
     if (cheats === code) {
       console.log('Nailed it!')
+      debugger;
       alert('1337 HAXXOR!!')
     }
   })
