@@ -4,12 +4,13 @@ const index = 0
 function init() {
   // Write your JavaScript code inside the init() function
   const body = document.querySelector('body')
-  const cheats = []
+  var cheats = []
   body.addEventListener('keydown', function(e) {
     console.log(e.detail || e.which)
     cheats.push(parseInt(e.detail || e.which))
     console.log(cheats)
     })
+  debugger;  
   if (cheats === code) {
     console.log('Nailed it!')
     alert('1337 HAXXOR!!')
