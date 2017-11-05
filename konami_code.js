@@ -19,10 +19,12 @@ function init() {
         debugger;
         alert('1337 HAXXOR!!')
         index = 0
+        cheats = []
       }
     } else {
       debugger;
       index = 0
+      cheats = []
       console.log('Nah bro.')
     }
   })
