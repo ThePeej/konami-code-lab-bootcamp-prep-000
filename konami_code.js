@@ -9,10 +9,10 @@ function init() {
     console.log(e.which)
     cheats.push(parseInt(e.which))
     console.log(cheats)
-    if (cheats === code) {
-      alert("1337 HAXXOR!!")
-    } else {
-      cheats = []
     }
   })
+  if (cheats === code) {
+    alert("1337 HAXXOR!!")
+  } else {
+    cheats = []
 }
