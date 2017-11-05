@@ -3,7 +3,7 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 function init() {
   // Write your JavaScript code inside the init() function
   const body = document.querySelector('body')
-  const index = 0
+  var index = 0
   var cheats = []
   body.addEventListener('keydown', function(e) {
     var key = parseInt(e.detail || e.which)
@@ -13,7 +13,7 @@ function init() {
       index++
       cheats.push(parseInt(e.detail || e.which))
       console.log(cheats)
-      
+
       if (index === code.length) {
         console.log('Nailed it!')
         debugger;
@@ -24,6 +24,6 @@ function init() {
       debugger;
       index = 0
       console.log('Nah bro.')
-    } 
+    }
   })
 }
